@@ -1,0 +1,55 @@
+<p style="font-size: 20px; text-align: center;">this is the colección</p> 
+  
+<h1>app-coleccion </h1>
+
+
+<div *ngFor="let p of coleccion" class="contenedor">
+    
+    <div *ngIf=" 1 == p.id_user" class="perfil">
+        <div style="color: aliceblue; font-size: 100px;" class="datos">
+            <div>
+                ID: {{p.id}}
+            </div>
+            <div>
+                {{p.id_user}}
+            </div>
+            <div>
+                {{p.id_pieza}}
+            </div>
+
+        
+        </div>
+        
+    </div>
+   
+</div>
+
+<div *ngFor="let p of pieza" class="contenedor">
+    
+    <div  class="perfil">
+        <div class="datos">
+            <div>
+                ID: {{p.id}}
+            </div>
+            <div >
+                <img  style="height: 160px; width: 90px;" [src]="p.anverso" alt="">
+            </div>
+            <div>
+                <img style="height: 160px; width: 90px;" [src]="p.reverso" alt="">
+            </div>
+            <div>
+                {{ p.descripcion}}
+            </div>
+            <div>
+                {{ p.id_categotia}}
+            </div>
+            <div>
+                {{ p.id_tipo}}
+            </div>
+
+        </div>
+        
+    </div>
+   
+</div>
+

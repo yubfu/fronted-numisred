@@ -1,0 +1,62 @@
+<p style="font-size: 20px; text-align: center;">this is the perfil</p> 
+  
+<h1>Perfil de usuario </h1>
+
+<div *ngFor="let p of perfil" class="contenedor">
+    
+    <div  *ngIf= " 1 == p.id" class="perfil">
+        <div class="datos">
+            <div>
+                ID: {{p.id}}
+            </div>
+            <div>
+                {{p.user}}
+            </div>
+            <div>
+                {{p.documento}}
+            </div>
+            <div>
+                {{ p.telefono}}
+            </div>
+            <div>
+                {{ p.direccion}}
+            </div>
+            <div>
+                {{ p.id_rol}}
+            </div>
+            <div>
+                <img style="height: 120px; width: 90px;" [src]="p.avatar" alt="">
+            </div>
+
+        </div>
+        
+    </div>
+   
+</div>
+
+<div *ngFor="let p of user" class="contenedor">
+    
+    <div *ngIf=" 1 == p.id" class="perfil">
+        <div class="datos">
+            <div>
+                ID: {{p.id}}
+            </div>
+            <div>
+                {{p.username}}
+            </div>
+            <div>
+                {{p.first_name}}
+            </div>
+            <div>
+                {{ p.last_name}}
+            </div>
+            <div>
+                {{ p.email}}
+            </div>
+        </div>
+        
+    </div>
+   
+</div>
+        <button (click)="agregarObservacion()">Agregar observación</button>
+<!--<app-perfil *ngFor="let p of user" (estudianteClicked)="clickEstudiante($event)" [user] = "p"></app-perfil>-->

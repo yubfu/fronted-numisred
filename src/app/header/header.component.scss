@@ -1,0 +1,94 @@
+
+$dorado : #efb810;
+$amarillo: #F9E547;
+$blanco : #ffff;
+
+nav a.active{
+    background-color: #F2F3D3;
+    color: $dorado;
+    border-radius: 5px;
+
+}
+
+img{
+    height: 60px;
+    width: 100px;
+    float: left;
+    margin-left: 30%;
+}
+
+//////////////////7
+.header{
+    height:70px;
+    //background-image: url(/assets/media/dinero.png);
+    margin-left: 1px;
+    margin-right: 1px;
+   
+}
+
+.logo h1{
+    float: left;
+}
+
+
+.leyenda{
+    text-align: center;
+  
+}
+.menu a{
+    height:55%;
+    color: $dorado;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    float: right;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font:bold; 
+    font-size: 16px;
+}
+
+.menu a:hover{
+background: #F2F3D3;
+color: $dorado;
+font-size: 18px;
+border-radius: 5px;
+}
+
+///////////logo/////////////
+
+.logo{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content: left;
+}
+
+
+///////////////////
+
+
+.svg{
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+#svg{
+   
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: left;
+    
+}
+#titulo{
+    color: $dorado;
+    border: 5px;
+    
+    margin-left: 40px;
+    margin-top: 15px;
+    font-family: cursive;
+    font-size: 130%;
+}
